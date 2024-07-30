@@ -1,8 +1,4 @@
-n = float(input("Digite um número aí, seu porra: "))
+nome = str(input("Digite o seu nome: "))
 
-if n == 0:
-    print("Parabéns, fez o mínimo")
-elif n == 7:
-    print("Numero da sorte, cornão")
-else:
-    print("Alo porra, tá errado caralho")
+print("O seu nome em maiúsculos é: {}".format(nome.upper()))
+print("O seu nome em minúsculas é: {}".format(nome.lower()))
