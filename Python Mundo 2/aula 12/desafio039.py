@@ -13,4 +13,3 @@ elif parametro == 18:
     print("Está na hora! Você deve se alistar este ano!")
 else:
     print("O tempo já passou! Deveria ter se alistado há {} ano(s) atrás, em {}!".format(atraso, diferenca_maior)) 
-
