@@ -1,10 +1,15 @@
 from datetime import date
 
-ano_atual = date.today().year
-idade = int(input("Digite o seu ano de nascimento: "))
-mirim = ano_atual - (ano_atual - 9)
-infantil = ano_atual - (ano_atual - 14)
-junior = ano_atual - (ano_atual - 19)
-senior = ano_atual - (ano_atual - 20)
+ano = int(input("Digite o ano do seu nascimento: "))
+idade = date.today().year - ano
 
-print(mirim, infantil, junior, senior)
+if idade <= 9:
+    print("Sua idade é de {} anos. A sua categoria correta é MIRIM".format(idade))
+elif idade <= 14:
+    print("Sua idade é de {} anos. A sua categoria correta é INFANTIL".format(idade))
+elif idade <=19:
+    print("Sua idade é de {} anos. A sua categoria correta é JUNIOR".format(idade))
+elif idade ==20:
+    print("Sua idade é de {} anos. A sua categoria correta é SÊNIOR".format(idade))
+else:
+    print("Sua idade é de {} anos. A sua categoria correta é MASTER".format(idade))
