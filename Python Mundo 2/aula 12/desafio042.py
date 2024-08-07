@@ -13,6 +13,6 @@ else:
 if r1 == r2 and r2 == r3:
     print('Seu triângulo é um EQUILÁTERO')
 elif r1 == r2 or r2 == r3 or r1 == r3:
-    print('Seu triângulo é um Isósceles')
+    print('Seu triângulo é um ISÓSCELES')
 else:
-    print('Seu triângulo é um Escaleno')
+    print('Seu triângulo é um ESCALENO')
