@@ -1,16 +1,23 @@
+print('{:=^40}'.format(' LOJAS SILVA '))
 preco = float(input('Digite o valor do produto: R$'))
-din_che = preco - (preco*0.10)
-c1x = preco - (preco*0.05)
-c3x = preco + (preco*0.20)
-pagamento = int(input('Escolha a forma de pagamento: \n1 - À vista dinhero/cheque \n2 - À vista cartão \n3 - 2x no cartão \n4 - 3x ou mais no cartão \n '))
+pagamento = int(input('''FORMAS DE PAGAMENTO:
+[1] À vista dinhero/cheque
+[2] À vista cartão
+[3] 2x no cartão
+[4] 3x ou mais no cartão
+'''))
 
 if pagamento == 1:
-    print('O valor ficará R${:.2f}!'.format(din_che))
+    total = preco - (preco * 10 / 100)
+    print('O valor final da sua compra ficará R${:.2f}!'.format(total))
 elif pagamento == 2:
-    print('O valor ficará R${:.2f}!'.format(c1x))
+    total = preco - (preco * 5 / 100)
+    print('O valor final da sua compra ficará R${:.2f}!'.format(total))
 elif pagamento == 3:
-    print('O valor ficará R${:.2f}!'.format(preco))
+    print('Sua compra será parcelada em 2x de R${:.2f}'.format(preco/2))
+    print('O valor final da sua compra ficará R${:.2f}!'.format(preco))
 elif pagamento == 4:
-    print('O valor ficará R${:.2f}!'.format(c3x))
+    total = preco + (preco * 20 / 100)
+    print('O valor final da sua compra ficará R${:.2f}!'.format(total))
 else:
     print('Forma de pagamento inválida!')
