@@ -9,4 +9,4 @@ if media < 5.0:
 elif media < 7.0:
     print("Você está na RECUPERAÇÃO!")
 else: 
-    print("Você está APROVADO! Parabéns!!!")
+    print("Você está APROVADO! Parabéns!!!") 
