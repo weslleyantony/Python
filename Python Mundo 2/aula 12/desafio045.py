@@ -1,14 +1,14 @@
-from random import randint 
+import random
 print('-='*20)
 print('JOKENPÔ com PYTHON')
 print('-='*20)
 
-escolha = str(input('''Escolha uma opção:
+escolha = int(input('''Escolha uma opção:
 [ 1 ] Pedra
 [ 2 ] Papel
 [ 3 ] Tesoura
-''')).upper()
-sorteio = randint(1,3)
+'''))
+sorteio = random.randint(1,3)
 
 
 print('Você escolheu {}'.format(escolha))

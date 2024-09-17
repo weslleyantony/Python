@@ -21,4 +21,4 @@ elif pagamento == 4:
     print('Sua compra será parcelada em 3x de R${:.2f}'.format(preco))
     print('O valor final da sua compra de R${:.2f} ficará R${:.2f}!'.format(preco,total))
 else:
-    print('Forma de pagamento inválida!')
+    print('Forma de pagamento inválida!') 
