@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from datetime import date
 ano = date.today().year
 totmai = 0
@@ -11,3 +12,10 @@ for c in range (1,8):
     elif dif < 18:
         totmen += 1
 print('Temos {} pessoa(s) maior(es) de idade e {} pessoa(s) menor(es) de idade'.format(totmai,totmen))
+=======
+from datetime import year
+
+ano = year.today()
+
+print(ano)
+>>>>>>> ee8aeec2a30dc5d99e6fed3f157a0b2cae9295b4
