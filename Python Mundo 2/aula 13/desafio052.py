@@ -12,3 +12,4 @@ if tot == 2:
     print('Este número é PRIMO!')
 else:
    print('Este número NÃO É PRIMO')
+   
